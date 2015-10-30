@@ -14,6 +14,17 @@
 		B912D6401BE211EC000A2473 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B912D63F1BE211EC000A2473 /* Assets.xcassets */; };
 		B912D6431BE211EC000A2473 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B912D6411BE211EC000A2473 /* LaunchScreen.storyboard */; };
 		B912D64E1BE211EC000A2473 /* MiniPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B912D64D1BE211EC000A2473 /* MiniPlayerUITests.m */; };
+		B912D6611BE213FC000A2473 /* PlayList.m in Sources */ = {isa = PBXBuildFile; fileRef = B912D6601BE213FC000A2473 /* PlayList.m */; settings = {ASSET_TAGS = (); }; };
+		B912D6691BE21628000A2473 /* 不再犹豫.lrc in Resources */ = {isa = PBXBuildFile; fileRef = B912D6631BE21628000A2473 /* 不再犹豫.lrc */; settings = {ASSET_TAGS = (); }; };
+		B912D66A1BE21628000A2473 /* 不再犹豫.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B912D6641BE21628000A2473 /* 不再犹豫.mp3 */; settings = {ASSET_TAGS = (); }; };
+		B912D66B1BE21628000A2473 /* 喜欢你.lrc in Resources */ = {isa = PBXBuildFile; fileRef = B912D6651BE21628000A2473 /* 喜欢你.lrc */; settings = {ASSET_TAGS = (); }; };
+		B912D66C1BE21628000A2473 /* 喜欢你.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B912D6661BE21628000A2473 /* 喜欢你.mp3 */; settings = {ASSET_TAGS = (); }; };
+		B912D66D1BE21628000A2473 /* 海阔天空.lrc in Resources */ = {isa = PBXBuildFile; fileRef = B912D6671BE21628000A2473 /* 海阔天空.lrc */; settings = {ASSET_TAGS = (); }; };
+		B912D66E1BE21628000A2473 /* 海阔天空.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B912D6681BE21628000A2473 /* 海阔天空.mp3 */; settings = {ASSET_TAGS = (); }; };
+		B92D97491BE234C70091F235 /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = B92D97481BE234C70091F235 /* UIView+Category.m */; settings = {ASSET_TAGS = (); }; };
+		B92D974C1BE237AE0091F235 /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B92D974B1BE237AE0091F235 /* DataSource.m */; settings = {ASSET_TAGS = (); }; };
+		B92D974F1BE24F190091F235 /* MPSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = B92D974E1BE24F190091F235 /* MPSlider.m */; settings = {ASSET_TAGS = (); }; };
+		B92D97521BE252090091F235 /* BackgourdView.m in Sources */ = {isa = PBXBuildFile; fileRef = B92D97511BE252090091F235 /* BackgourdView.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +51,23 @@
 		B912D6491BE211EC000A2473 /* MiniPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B912D64D1BE211EC000A2473 /* MiniPlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MiniPlayerUITests.m; sourceTree = "<group>"; };
 		B912D64F1BE211EC000A2473 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B912D65D1BE21280000A2473 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B912D65F1BE213FC000A2473 /* PlayList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayList.h; sourceTree = "<group>"; };
+		B912D6601BE213FC000A2473 /* PlayList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayList.m; sourceTree = "<group>"; };
+		B912D6631BE21628000A2473 /* 不再犹豫.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "不再犹豫.lrc"; sourceTree = "<group>"; };
+		B912D6641BE21628000A2473 /* 不再犹豫.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "不再犹豫.mp3"; sourceTree = "<group>"; };
+		B912D6651BE21628000A2473 /* 喜欢你.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "喜欢你.lrc"; sourceTree = "<group>"; };
+		B912D6661BE21628000A2473 /* 喜欢你.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "喜欢你.mp3"; sourceTree = "<group>"; };
+		B912D6671BE21628000A2473 /* 海阔天空.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "海阔天空.lrc"; sourceTree = "<group>"; };
+		B912D6681BE21628000A2473 /* 海阔天空.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "海阔天空.mp3"; sourceTree = "<group>"; };
+		B92D97471BE234C70091F235 /* UIView+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Category.h"; sourceTree = "<group>"; };
+		B92D97481BE234C70091F235 /* UIView+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Category.m"; sourceTree = "<group>"; };
+		B92D974A1BE237AE0091F235 /* DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource.h; sourceTree = "<group>"; };
+		B92D974B1BE237AE0091F235 /* DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource.m; sourceTree = "<group>"; };
+		B92D974D1BE24F190091F235 /* MPSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPSlider.h; sourceTree = "<group>"; };
+		B92D974E1BE24F190091F235 /* MPSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPSlider.m; sourceTree = "<group>"; };
+		B92D97501BE252090091F235 /* BackgourdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgourdView.h; sourceTree = "<group>"; };
+		B92D97511BE252090091F235 /* BackgourdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgourdView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,14 +109,7 @@
 		B912D6321BE211EC000A2473 /* MiniPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				B912D6361BE211EC000A2473 /* AppDelegate.h */,
-				B912D6371BE211EC000A2473 /* AppDelegate.m */,
-				B912D6391BE211EC000A2473 /* ViewController.h */,
-				B912D63A1BE211EC000A2473 /* ViewController.m */,
-				B912D63C1BE211EC000A2473 /* Main.storyboard */,
-				B912D63F1BE211EC000A2473 /* Assets.xcassets */,
-				B912D6411BE211EC000A2473 /* LaunchScreen.storyboard */,
-				B912D6441BE211EC000A2473 /* Info.plist */,
+				B912D65C1BE21252000A2473 /* Classes */,
 				B912D6331BE211EC000A2473 /* Supporting Files */,
 			);
 			path = MiniPlayer;
@@ -97,7 +118,11 @@
 		B912D6331BE211EC000A2473 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B912D6341BE211EC000A2473 /* main.m */,
+				B912D6621BE21628000A2473 /* Songs */,
+				B912D63F1BE211EC000A2473 /* Assets.xcassets */,
+				B912D6411BE211EC000A2473 /* LaunchScreen.storyboard */,
+				B912D6441BE211EC000A2473 /* Info.plist */,
+				B912D65D1BE21280000A2473 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -109,6 +134,82 @@
 				B912D64F1BE211EC000A2473 /* Info.plist */,
 			);
 			path = MiniPlayerUITests;
+			sourceTree = "<group>";
+		};
+		B912D6581BE21211000A2473 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B912D6391BE211EC000A2473 /* ViewController.h */,
+				B912D63A1BE211EC000A2473 /* ViewController.m */,
+				B92D97501BE252090091F235 /* BackgourdView.h */,
+				B92D97511BE252090091F235 /* BackgourdView.m */,
+				B92D974D1BE24F190091F235 /* MPSlider.h */,
+				B92D974E1BE24F190091F235 /* MPSlider.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		B912D6591BE21218000A2473 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B912D63C1BE211EC000A2473 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B912D65A1BE21220000A2473 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B912D6341BE211EC000A2473 /* main.m */,
+				B912D6361BE211EC000A2473 /* AppDelegate.h */,
+				B912D6371BE211EC000A2473 /* AppDelegate.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		B912D65B1BE2123C000A2473 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B912D65F1BE213FC000A2473 /* PlayList.h */,
+				B912D6601BE213FC000A2473 /* PlayList.m */,
+				B92D974A1BE237AE0091F235 /* DataSource.h */,
+				B92D974B1BE237AE0091F235 /* DataSource.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B912D65C1BE21252000A2473 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B912D65E1BE212C2000A2473 /* Category */,
+				B912D65A1BE21220000A2473 /* Main */,
+				B912D65B1BE2123C000A2473 /* Model */,
+				B912D6581BE21211000A2473 /* Controller */,
+				B912D6591BE21218000A2473 /* View */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		B912D65E1BE212C2000A2473 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				B92D97471BE234C70091F235 /* UIView+Category.h */,
+				B92D97481BE234C70091F235 /* UIView+Category.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		B912D6621BE21628000A2473 /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+				B912D6631BE21628000A2473 /* 不再犹豫.lrc */,
+				B912D6641BE21628000A2473 /* 不再犹豫.mp3 */,
+				B912D6651BE21628000A2473 /* 喜欢你.lrc */,
+				B912D6661BE21628000A2473 /* 喜欢你.mp3 */,
+				B912D6671BE21628000A2473 /* 海阔天空.lrc */,
+				B912D6681BE21628000A2473 /* 海阔天空.mp3 */,
+			);
+			path = Songs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,9 +292,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B912D66B1BE21628000A2473 /* 喜欢你.lrc in Resources */,
+				B912D66C1BE21628000A2473 /* 喜欢你.mp3 in Resources */,
 				B912D6431BE211EC000A2473 /* LaunchScreen.storyboard in Resources */,
+				B912D6691BE21628000A2473 /* 不再犹豫.lrc in Resources */,
 				B912D6401BE211EC000A2473 /* Assets.xcassets in Resources */,
+				B912D66D1BE21628000A2473 /* 海阔天空.lrc in Resources */,
+				B912D66A1BE21628000A2473 /* 不再犹豫.mp3 in Resources */,
 				B912D63E1BE211EC000A2473 /* Main.storyboard in Resources */,
+				B912D66E1BE21628000A2473 /* 海阔天空.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +320,12 @@
 			files = (
 				B912D63B1BE211EC000A2473 /* ViewController.m in Sources */,
 				B912D6381BE211EC000A2473 /* AppDelegate.m in Sources */,
+				B92D974C1BE237AE0091F235 /* DataSource.m in Sources */,
 				B912D6351BE211EC000A2473 /* main.m in Sources */,
+				B92D97491BE234C70091F235 /* UIView+Category.m in Sources */,
+				B92D974F1BE24F190091F235 /* MPSlider.m in Sources */,
+				B912D6611BE213FC000A2473 /* PlayList.m in Sources */,
+				B92D97521BE252090091F235 /* BackgourdView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +451,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = MiniPlayer/PrefixHeader.pch;
 				INFOPLIST_FILE = MiniPlayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = EA.MiniPlayer;
@@ -350,6 +463,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = MiniPlayer/PrefixHeader.pch;
 				INFOPLIST_FILE = MiniPlayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = EA.MiniPlayer;
@@ -400,6 +514,7 @@
 				B912D6541BE211EC000A2473 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B912D6551BE211EC000A2473 /* Build configuration list for PBXNativeTarget "MiniPlayerUITests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +523,7 @@
 				B912D6571BE211EC000A2473 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
