@@ -12,7 +12,7 @@
 
 #import "BackgourdView.h"
 
-@interface ViewController () <AVAudioPlayerDelegate>
+@interface ViewController ()
 
 @property (nonatomic, strong) AVAudioPlayer *player;
 @property (nonatomic, strong) PlayList *playList;
@@ -38,7 +38,6 @@
     
     _playList = [[PlayList alloc]init];
     _timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(onExpired) userInfo:nil repeats:YES];
-    //_player.delegate = self;
     
     // 背景图片
     _backView = [[BackgourdView alloc]initWithFrame:ScreamFrame];
@@ -111,17 +110,17 @@
         if (!_player)
         {
             _player= [_playList playCurrentMusic];
+            
         }
         [_player play];
         [_playButton setBackgroundImage:[UIImage imageNamed:@"pause"] forState:UIControlStateNormal];
-        [self reSet];
-        [self onExpired];
     }
     else
     {
         [_player stop];
         [_playButton setBackgroundImage:[UIImage imageNamed:@"play"] forState:UIControlStateNormal];
     }
+    //[self reSet];
 }
 
 - (void)didSelecteAbove:(UIButton *)button
@@ -130,13 +129,13 @@
     {
         _player= [_playList playAboveMusic];
         [_player play];
+        [self reSet];
     }
     else
     {
         _player= [_playList playAboveMusic];
+        [_player stop];
     }
-    
-    [self reSet];
 }
 
 - (void)didSelecteNext:(UIButton *)button
@@ -145,12 +144,13 @@
     {
         _player= [_playList playNextMusic];
         [_player play];
+        
     }
     else
     {
         _player= [_playList playNextMusic];
+        [_player stop];
     }
-
     [self reSet];
 }
 
@@ -160,12 +160,14 @@
     {
         _player= [_playList playRandomMusic];
         [_player play];
+        
     }
     else
     {
         _player= [_playList playRandomMusic];
+        [_player stop];
+        [self reSet];
     }
-    [self reSet];
 }
 
 - (void)didChangeSound:(UISlider *)slider
@@ -182,11 +184,10 @@
 
 - (void)reSet
 {
-    //_processLabel.text = @"00:00";
+    _processLabel.text = @"00:00";
     int time = _player.duration;
-    _playSlider.value = 0.0;
+    _playSlider.value = 0;
     _totalLabel.text = [NSString stringWithFormat:@"%.2d:%.2d",time/60,time%60];
-    _player.delegate = self;
 }
 
 - (void)onExpired
@@ -196,13 +197,9 @@
     _playSlider.value = time / _player.duration;
 }
 
-
-- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
-{
-    _player= [_playList playNextMusic];
-    [_player play];
-    [self reSet];
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
-
 
 @end

@@ -25,8 +25,6 @@
 		B92D974C1BE237AE0091F235 /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B92D974B1BE237AE0091F235 /* DataSource.m */; settings = {ASSET_TAGS = (); }; };
 		B92D974F1BE24F190091F235 /* MPSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = B92D974E1BE24F190091F235 /* MPSlider.m */; settings = {ASSET_TAGS = (); }; };
 		B92D97521BE252090091F235 /* BackgourdView.m in Sources */ = {isa = PBXBuildFile; fileRef = B92D97511BE252090091F235 /* BackgourdView.m */; settings = {ASSET_TAGS = (); }; };
-		B9466A271BE356DA0020696E /* TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9466A251BE356DA0020696E /* TableView.m */; settings = {ASSET_TAGS = (); }; };
-		B9466A281BE356DA0020696E /* TableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9466A261BE356DA0020696E /* TableView.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,9 +68,6 @@
 		B92D974E1BE24F190091F235 /* MPSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPSlider.m; sourceTree = "<group>"; };
 		B92D97501BE252090091F235 /* BackgourdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgourdView.h; sourceTree = "<group>"; };
 		B92D97511BE252090091F235 /* BackgourdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgourdView.m; sourceTree = "<group>"; };
-		B9466A241BE356DA0020696E /* TableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableView.h; sourceTree = "<group>"; };
-		B9466A251BE356DA0020696E /* TableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableView.m; sourceTree = "<group>"; };
-		B9466A261BE356DA0020696E /* TableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,9 +153,6 @@
 			isa = PBXGroup;
 			children = (
 				B912D63C1BE211EC000A2473 /* Main.storyboard */,
-				B9466A241BE356DA0020696E /* TableView.h */,
-				B9466A251BE356DA0020696E /* TableView.m */,
-				B9466A261BE356DA0020696E /* TableView.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -307,7 +299,6 @@
 				B912D6401BE211EC000A2473 /* Assets.xcassets in Resources */,
 				B912D66D1BE21628000A2473 /* 海阔天空.lrc in Resources */,
 				B912D66A1BE21628000A2473 /* 不再犹豫.mp3 in Resources */,
-				B9466A281BE356DA0020696E /* TableView.xib in Resources */,
 				B912D63E1BE211EC000A2473 /* Main.storyboard in Resources */,
 				B912D66E1BE21628000A2473 /* 海阔天空.mp3 in Resources */,
 			);
@@ -327,7 +318,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9466A271BE356DA0020696E /* TableView.m in Sources */,
 				B912D63B1BE211EC000A2473 /* ViewController.m in Sources */,
 				B912D6381BE211EC000A2473 /* AppDelegate.m in Sources */,
 				B92D974C1BE237AE0091F235 /* DataSource.m in Sources */,

@@ -114,14 +114,13 @@
         }
         [_player play];
         [_playButton setBackgroundImage:[UIImage imageNamed:@"pause"] forState:UIControlStateNormal];
-        [self reSet];
-        [self onExpired];
     }
     else
     {
         [_player stop];
         [_playButton setBackgroundImage:[UIImage imageNamed:@"play"] forState:UIControlStateNormal];
     }
+    [self reSet];
 }
 
 - (void)didSelecteAbove:(UIButton *)button
@@ -130,13 +129,13 @@
     {
         _player= [_playList playAboveMusic];
         [_player play];
+        [self reSet];
     }
     else
     {
         _player= [_playList playAboveMusic];
+        [_player stop];
     }
-    
-    [self reSet];
 }
 
 - (void)didSelecteNext:(UIButton *)button
@@ -145,12 +144,13 @@
     {
         _player= [_playList playNextMusic];
         [_player play];
+        
     }
     else
     {
         _player= [_playList playNextMusic];
+        [_player stop];
     }
-
     [self reSet];
 }
 
@@ -160,12 +160,14 @@
     {
         _player= [_playList playRandomMusic];
         [_player play];
+        
     }
     else
     {
         _player= [_playList playRandomMusic];
+        [_player stop];
+        [self reSet];
     }
-    [self reSet];
 }
 
 - (void)didChangeSound:(UISlider *)slider
@@ -184,7 +186,7 @@
 {
     //_processLabel.text = @"00:00";
     int time = _player.duration;
-    _playSlider.value = 0.0;
+    _playSlider.value = 0;
     _totalLabel.text = [NSString stringWithFormat:@"%.2d:%.2d",time/60,time%60];
     _player.delegate = self;
 }
@@ -199,9 +201,9 @@
 
 - (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
 {
+    NSLog(@"完了");
     _player= [_playList playNextMusic];
     [_player play];
-    [self reSet];
 }
 
 

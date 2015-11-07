@@ -9,7 +9,7 @@
 #import "PlayList.h"
 #import "DataSource.h"
 
-@interface PlayList () 
+@interface PlayList ()
 
 @property (nonatomic, strong) AVAudioPlayer     *player;
 @property (nonatomic, strong) NSURL             *source;
